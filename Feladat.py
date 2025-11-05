@@ -1,7 +1,4 @@
 email = input("Your email address: ")
-# username = email.split("@")[0]
-# domain = email.split("@")[1]
-
 
 length_of_email = len(email)
 number_of_at_characters = email.count("@")
@@ -34,33 +31,6 @@ while is_valid:
     elif number_of_at_characters > 1:
         print(error_message_too_many_at)
 
-    # else:
-    #     username, domain = email.split("@")
-
-    #     if len(username) == 0:
-    #         print(error_message_no_username)
-        
-    #     if "." not in domain:
-    #         print(error_message_no_dot_in_domain)
-
-    #     if (email.split("@")[1])[0] == ".":
-    #         print(error_message_no_server_name)
-        
-    #     if len((email.split("@")[1]).split(".")[1]) == 0:
-    #         print(error_message_no_tld)
-        
-    #     if len((email.split("@")[1]).split(".")[1]) < 2:
-    #         print(error_message_short_tld)
-        
-    #     if len(email.split("@")[1]) == 0:
-    #         print(error_message_no_domain)
-            
-    #     if (email.split("@")[0])[0] == ".":
-    #         print(error_message_invalid_username)
-
-    # if number_of_dot_characters == 0:
-    #     print(error_message_no_dot)
-
     else:
         username, domain = email.split("@")
 
@@ -88,3 +58,4 @@ while is_valid:
         print(error_message_no_dot)
     
     break
+
