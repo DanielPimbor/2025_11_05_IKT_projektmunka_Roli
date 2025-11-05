@@ -37,7 +37,6 @@ while is_valid:
 
     else:
         username, domain = email.split("@")
-        hibak += 1
 
         if len(username) == 0:
             print(error_message_no_username)
