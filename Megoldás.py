@@ -59,11 +59,11 @@ while True:
                         print(error_message_no_server_name)
                         hibak += 1
 
-                    if len(domain_parts[-1]) == 0:
+                    if len(domain_parts[1]) == 0:
                         print(error_message_no_tld)
                         hibak += 1
 
-                    elif len(domain_parts[-1]) < 2:
+                    elif len(domain_parts[1]) < 2:
                         print(error_message_short_tld)
                         hibak += 1
 
